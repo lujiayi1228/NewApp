@@ -1,0 +1,47 @@
+PODS:
+  - Alamofire (4.8.2)
+  - IQKeyboardManager (6.2.1)
+  - Kingfisher (4.10.1)
+  - MJRefresh (3.1.16)
+  - Moya (12.0.1):
+    - Moya/Core (= 12.0.1)
+  - Moya/Core (12.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.0)
+  - Result (4.1.0)
+  - SVProgressHUD (2.2.5)
+  - SwiftyJSON (4.3.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - IQKeyboardManager
+  - Kingfisher
+  - MJRefresh
+  - Moya
+  - SVProgressHUD
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - IQKeyboardManager
+    - Kingfisher
+    - MJRefresh
+    - Moya
+    - Result
+    - SVProgressHUD
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  IQKeyboardManager: 964638372b4a61892cc74fdfa6fd26de8c9464a2
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  MJRefresh: 7798e16e53a5ef7f332dd05b27664db4e29530fd
+  Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+
+PODFILE CHECKSUM: 604235447b4efb78ac1cf910641c217baf8503e9
+
+COCOAPODS: 1.5.3
