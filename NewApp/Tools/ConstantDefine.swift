@@ -54,16 +54,18 @@ let screenCenter = CGPoint.init(x: screenCenterX, y: screenCenterY)
 
 let naviHeight : CGFloat = phoneTop + 64
 
-let tabbarHeight : CGFloat = deviceIsMainScreenIPhone ? 49 + 24 : 49
+let tabbarHeight : CGFloat = deviceIsMainScreenIPhone ? 50 + 34 : 50
 
-let phoneTop : CGFloat = deviceIsMainScreenIPhone ? 24 : 0
+let phoneTop : CGFloat = deviceIsMainScreenIPhone ? 44 : 0
 
-let phoneBottom : CGFloat = deviceIsMainScreenIPhone ? screenHeight - 24 : screenHeight
+let phoneBottom : CGFloat = deviceIsMainScreenIPhone ? screenHeight - 34 : screenHeight
 
 
 /*
  colors
  */
+let themeColor = colorRGBA(red: 245, green: 90, blue: 93, alpha: 1)
+
 let whiteColor = UIColor.white
 
 let blackColor = UIColor.black

@@ -17,6 +17,7 @@ extension AppDelegate : MainViewLogicable{
         windowShowHomeView()
         IQKeyboardManager.shared().isEnabled = true
         IQKeyboardManager.shared().shouldResignOnTouchOutside = true
+        UIApplication.shared.statusBarStyle = .lightContent
     }
 }
 

@@ -11,6 +11,9 @@ target 'NewApp' do
     pod 'SVProgressHUD'
     pod 'MJRefresh'
     pod 'IQKeyboardManager'
+    pod 'SVGKit'
+    pod 'FSPagerView'
+    pod 'MZTimerLabel'
 end
 
 

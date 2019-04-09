@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>风云榜fill</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="5.27875541%" y1="94.5979657%" x2="95.1587639%" y2="3.39331296%" id="linearGradient-1">
+            <stop stop-color="#F67361" offset="0%"></stop>
+            <stop stop-color="#F7504E" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="夺宝icon" transform="translate(-64.000000, -64.000000)">
+            <g id="风云榜fill" transform="translate(64.000000, 64.000000)">
+                <rect id="Rectangle-8-Copy-6" fill-opacity="0" fill="#D8B8B8" x="0" y="0" width="24" height="24"></rect>
+                <g transform="translate(1.000000, 1.000000)">
+                    <path d="M2.5,0.9 L19.5,0.9 C20.3836556,0.9 21.1,1.6163444 21.1,2.5 L21.1,19.5 C21.1,20.3836556 20.3836556,21.1 19.5,21.1 L2.5,21.1 C1.6163444,21.1 0.9,20.3836556 0.9,19.5 L0.9,2.5 C0.9,1.6163444 1.6163444,0.9 2.5,0.9 Z" id="Path" fill="url(#linearGradient-1)"></path>
+                    <rect id="Rectangle-16" fill="#FFFFFF" x="10.0200195" y="5.50952148" width="8" height="1" rx="0.5"></rect>
+                    <rect id="Rectangle-16-Copy" fill="#FFFFFF" x="10" y="15.505127" width="8" height="1" rx="0.5"></rect>
+                    <rect id="Rectangle-16-Copy-2" fill="#FFFFFF" x="9.9954834" y="10.4928589" width="8" height="1" rx="0.5"></rect>
+                    <polygon id="Star" fill="#FFFFFF" points="6 7 4.8244295 7.61803399 5.04894348 6.30901699 4.09788697 5.38196601 5.41221475 5.19098301 6 4 6.58778525 5.19098301 7.90211303 5.38196601 6.95105652 6.30901699 7.1755705 7.61803399"></polygon>
+                    <polygon id="Star-Copy" fill="#FFFFFF" points="6 17 4.8244295 17.618034 5.04894348 16.309017 4.09788697 15.381966 5.41221475 15.190983 6 14 6.58778525 15.190983 7.90211303 15.381966 6.95105652 16.309017 7.1755705 17.618034"></polygon>
+                    <polygon id="Star-Copy-2" fill="#FFFFFF" points="6 12 4.8244295 12.618034 5.04894348 11.309017 4.09788697 10.381966 5.41221475 10.190983 6 9 6.58778525 10.190983 7.90211303 10.381966 6.95105652 11.309017 7.1755705 12.618034"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

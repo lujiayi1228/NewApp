@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>关闭</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="登录-初始" transform="translate(-340.000000, -32.000000)" fill="#333333">
+            <g id="Group-2" transform="translate(349.500000, 42.000000) rotate(-315.000000) translate(-349.500000, -42.000000) translate(340.000000, 33.000000)">
+                <rect id="Rectangle-5" x="9" y="2.84217094e-14" width="1.79999995" height="18" rx="0.899999976"></rect>
+                <rect id="Rectangle-5-Copy" transform="translate(9.900000, 9.000000) rotate(-270.000000) translate(-9.900000, -9.000000) " x="9" y="-2.84217094e-14" width="1.79999995" height="18" rx="0.899999976"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -74,6 +74,10 @@ class CustomTabbar: UIView {
         self.backgroundColor = tabbarBackgroundColor
         createBtns()
         createControllers()
+        
+        let topLine = UIView(frame: CGRect(x: 0, y: 0, width: width, height: 1))
+        topLine.backgroundColor = colorRGBA(red: 200, green: 200, blue: 200, alpha: 1)
+        addSubview(topLine)
     }
     
     private func createBtns() {
@@ -82,14 +86,20 @@ class CustomTabbar: UIView {
         for key in plistData.allKeys {
             let dic : NSDictionary = plistData[key] as! NSDictionary
             let imageNames : NSDictionary = dic.object(forKey: "imageNames") as! NSDictionary
-            let normalImage = imageNames["normal"]!
-            let selectedImage = imageNames["selected"]!
-            
-            let btn = UIButton.init(type: .custom)
+            let normalImage = imageNames["normal"] as! String
+            let selectedImage = imageNames["selected"] as! String
+            let title = dic.object(forKey: "ItemName") as! String
+            let normalImg = UIImage.svgImageNamed(name: normalImage, size: CGSize(width: 22, height: 22))
+            let selectedImg = UIImage.svgImageNamed(name: selectedImage, size: CGSize(width: 22, height: 22))
+            let btn = CustomButton(type: .custom)
+            btn.layout = .normalTopBottom
             btn.addTarget(self, action: #selector(btnSelected(sender:)), for: .touchUpInside)
-            btn.setImage(UIImage.init(named: normalImage as! String), for: .normal)
-            btn.setImage(UIImage.init(named: selectedImage as! String), for: .selected)
-            
+            btn.setImage(normalImg, for: .normal)
+            btn.setImage(selectedImg, for: .selected)
+            btn.setTitle(title, for: .normal)
+            btn.titleLabel?.font = UIFont.systemFont(ofSize: 12)
+            btn.setTitleColor(colorRGBA(red: 100, green: 100, blue: 100, alpha: 1), for: .normal)
+            btn.setTitleColor(colorRGBA(red: 245, green: 90, blue: 93, alpha: 1), for: .selected)
             var keyNum : Int = 0
             if let keyStr = key as? String {
                 keyNum = Int(keyStr)!
@@ -100,8 +110,8 @@ class CustomTabbar: UIView {
             btn.backgroundColor = itemBackgroundColor
             self.addSubview(btn)
             itemsArr.append(btn)
+            
         }
-
     }
     
     private func createControllers() {

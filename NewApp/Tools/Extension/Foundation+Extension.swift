@@ -47,7 +47,39 @@ extension String {
     var htmlToString: String {
         return htmlToAttributedString?.string ?? ""
     }
+    
+    /// 手机号正则
+    ///
+    /// - Returns: true or false
+    func isPhoneNumber()-> Bool{
+        
+        for char in self{
+            if char == "_"{
+                return false
+            }
+        }
+        
+        var result = ""
+        // - 1、创建规则
+        let pattern1 = "1[0-9]{10}"
+        //        let pattern1 = "^[a-zA-Z\\u4e00-\\u9fa5][a-zA-Z0-9\\u4e00-\\u9fa5]$"
+        // - 2、创建正则表达式对象
+        let regex1 = try! NSRegularExpression(pattern: pattern1, options: NSRegularExpression.Options.caseInsensitive)
+        // - 3、开始匹配
+        let res = regex1.matches(in: self, options: NSRegularExpression.MatchingOptions(rawValue: 0), range: NSMakeRange(0, self.count))
+        // 输出结果
+        for checkingRes in res {
+            result = result + (self as NSString).substring(with: checkingRes.range)
+        }
+        if result == self{
+            return true
+        }else{
+            return false
+        }
+        
+    }
 }
+
 
 public extension Double {
     public static func randomDoubleNumber(lower: Double = 0,upper: Double = 100) -> Double {
@@ -67,16 +99,16 @@ public extension CGFloat {
     }
 }
 
-extension Array where Element == Optional<URL>{
-    public mutating func removeNil() {
-        var nilIndexs : [Int] = []
-        for (index,objc) in enumerated() {
-            if objc == nil {
-                nilIndexs.append(index)
-            }
-        }
-        for index in nilIndexs {
-            self[index] = URL(string: " ")
-        }
+extension Date {
+    var milliStamp : CLongLong {
+        let timeInterval: TimeInterval = self.timeIntervalSince1970
+        let millisecond = CLongLong(round(timeInterval*1000))
+        return millisecond
+    }
+    
+    var timeStamp : Int {
+        let timeInterval: TimeInterval = self.timeIntervalSince1970
+        let timeStamp = Int(timeInterval)
+        return timeStamp
     }
 }

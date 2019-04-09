@@ -107,7 +107,7 @@ extension MainViewLogicable where Self : NSObject {
 extension CustomNaviViewable where Self : UIViewController {
     func configNaviView(title:String?){
         let naviView = UIView.init(frame: CGRect.init(x: 0.0, y: 0.0, width: screenWidth, height: phoneTop+64.0))
-        naviView.backgroundColor = whiteColor;
+        naviView.backgroundColor = themeColor
         view.addSubview(naviView)
         naviBGView(navi: naviView)
         
@@ -116,14 +116,14 @@ extension CustomNaviViewable where Self : UIViewController {
         leftBtn.bottom = naviView.height
         leftBtn.addTarget(self, action: #selector(leftBtnClicked(sender:)), for:.touchUpInside)
         leftBtn.backgroundColor = clearColor
-        leftBtn.setImage(UIImage(named: "fanhui"), for: .normal)
+        leftBtn.setImage(UIImage(named: "icon_back"), for: .normal)
         naviView.addSubview(leftBtn)
         leftButton(btn: leftBtn)
         
         let titleL = UILabel.init(frame: CGRect.init(x: leftBtn.right, y: phoneTop+20, width: screenWidth-(leftBtn.right * 2), height: naviView.height - phoneTop - 20))
         titleL.text = title
         titleL.backgroundColor = clearColor
-        titleL.textColor = blackColor
+        titleL.textColor = whiteColor
         titleL.textAlignment = .center
         if title != nil {
             naviView.addSubview(titleL)
@@ -142,6 +142,15 @@ extension CustomNaviViewable where Self : UIViewController {
         naviLine.backgroundColor = colorRGBA(red: 220, green: 220, blue: 220, alpha: 1)
         naviView.addSubview(naviLine)
         bottomLine(line: naviLine)
+    }
+    
+    func checkLogin() -> Bool {
+        if UserInfoManager.shared().isLogin {
+            return true
+        }
+        let newVC = LoginMainVC()
+        navigationController?.pushViewController(newVC, animated: true)
+        return false
     }
 }
 
@@ -180,6 +189,11 @@ class RootVC : UIViewController, CustomNaviViewable{
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = whiteColor
+        configView()
+    }
+    
+    func configView() {
+        
     }
     
     func leftBtnClicked(sender: UIButton) {

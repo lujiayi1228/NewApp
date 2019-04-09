@@ -1,5 +1,9 @@
 PODS:
   - Alamofire (4.8.2)
+  - CocoaLumberjack (3.5.2):
+    - CocoaLumberjack/Core (= 3.5.2)
+  - CocoaLumberjack/Core (3.5.2)
+  - FSPagerView (0.8.2)
   - IQKeyboardManager (6.2.1)
   - Kingfisher (4.10.1)
   - MJRefresh (3.1.16)
@@ -8,40 +12,54 @@ PODS:
   - Moya/Core (12.0.1):
     - Alamofire (~> 4.1)
     - Result (~> 4.0)
+  - MZTimerLabel (0.5.4)
   - Result (4.1.0)
+  - SVGKit (2.1.0):
+    - CocoaLumberjack (~> 3.0)
   - SVProgressHUD (2.2.5)
   - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
   - Alamofire
+  - FSPagerView
   - IQKeyboardManager
   - Kingfisher
   - MJRefresh
   - Moya
+  - MZTimerLabel
+  - SVGKit
   - SVProgressHUD
   - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - CocoaLumberjack
+    - FSPagerView
     - IQKeyboardManager
     - Kingfisher
     - MJRefresh
     - Moya
+    - MZTimerLabel
     - Result
+    - SVGKit
     - SVProgressHUD
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  CocoaLumberjack: 118bf4a820efc641f79fa487b75ed928dccfae23
+  FSPagerView: 816a18842306973cc7cc6df8a5332272f7815c30
   IQKeyboardManager: 964638372b4a61892cc74fdfa6fd26de8c9464a2
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   MJRefresh: 7798e16e53a5ef7f332dd05b27664db4e29530fd
   Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
+  MZTimerLabel: cd9bfb9304540ef2a9e163384fca9c978f0dbf83
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  SVGKit: 8a2fc74258bdb2abb54d3b65f3dd68b0277a9c4d
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 604235447b4efb78ac1cf910641c217baf8503e9
+PODFILE CHECKSUM: 0c49f8dd3a96584669a8670804650663c2453444
 
 COCOAPODS: 1.5.3

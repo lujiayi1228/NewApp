@@ -5,65 +5,65 @@
 	<key>0</key>
 	<dict>
 		<key>ClassName</key>
-		<string>ViewController</string>
+		<string>HomeMainVC</string>
 		<key>ItemName</key>
 		<string>首页</string>
 		<key>imageNames</key>
 		<dict>
 			<key>normal</key>
-			<string>homeicon_normal</string>
+			<string>首页</string>
 			<key>selected</key>
-			<string>homeicon_selected</string>
+			<string>首页fill</string>
 			<key>hightlight</key>
-			<string>homeicon_selected</string>
+			<string>首页fill</string>
 		</dict>
 	</dict>
 	<key>1</key>
 	<dict>
 		<key>ClassName</key>
-		<string>ViewController</string>
+		<string>BoardMainVC</string>
 		<key>ItemName</key>
-		<string>农场</string>
+		<string>风云榜</string>
 		<key>imageNames</key>
 		<dict>
 			<key>normal</key>
-			<string>farmicon_normal</string>
+			<string>风云榜</string>
 			<key>selected</key>
-			<string>farmicon_selected</string>
+			<string>风云榜fill</string>
 			<key>hightlight</key>
-			<string>farmicon_selected</string>
+			<string>风云榜fill</string>
 		</dict>
 	</dict>
 	<key>2</key>
 	<dict>
 		<key>ClassName</key>
-		<string>ViewController</string>
+		<string>ResultMainVC</string>
 		<key>ItemName</key>
-		<string>发布</string>
+		<string>开奖</string>
 		<key>imageNames</key>
 		<dict>
 			<key>normal</key>
-			<string>release</string>
+			<string>开奖</string>
 			<key>selected</key>
-			<string>release</string>
+			<string>开奖fill</string>
 			<key>hightlight</key>
-			<string>release</string>
+			<string>开奖fill</string>
 		</dict>
 	</dict>
 	<key>3</key>
 	<dict>
 		<key>ClassName</key>
-		<string>ViewController</string>
+		<string>UserMainVC</string>
 		<key>ItemName</key>
-		<string>消息</string>
+		<string>我的</string>
 		<key>imageNames</key>
 		<dict>
 			<key>normal</key>
-			<string>message_normal</string>
+			<string>我的</string>
 			<key>selected</key>
-			<string>message_selected</string>
+			<string>我的fill</string>
 			<key>hightlight</key>
-			<string>message_selected</string>
+			<string>我的fill</string>
 		</dict>
 	</dict>
 </dict>

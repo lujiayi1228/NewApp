@@ -11,6 +11,11 @@ import UIKit
 
 extension UIView {
     
+    func cornerRadius(radius:CGFloat) {
+        layer.cornerRadius = radius
+        layer.masksToBounds = true
+    }
+    
     enum ShaderBGColorDirection {
         case fromLeftToRight
         case fromRightToLeft
